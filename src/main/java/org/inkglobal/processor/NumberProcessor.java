@@ -58,19 +58,19 @@ public class NumberProcessor extends BaseProcessor {
         return sb.toString();
     }
 
-    public int getExponent() {
+    private int getExponent() {
         return exponent;
     }
 
-    protected GeneralNumbersProcessor getHighProcessor() {
+    private GeneralNumbersProcessor getHighProcessor() {
         return hundredProcessor;
     }
 
-    protected GeneralNumbersProcessor getLowProcessor() {
+    private GeneralNumbersProcessor getLowProcessor() {
         return lowProcessor;
     }
 
-    public String getTransaltion() {
+    private String getTransaltion() {
         return GroupNumbers.HUNDRED.tranlate(getExponent());
     }
 }
