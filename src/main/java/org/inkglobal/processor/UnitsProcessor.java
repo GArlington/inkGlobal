@@ -9,14 +9,14 @@ public class UnitsProcessor extends BaseProcessor {
     @Override
     public String translate(String value) {
 
-        assert (value.length() <= 3);
+        assert (value.length() <= 2);
 
         StringBuilder sb = new StringBuilder();
 
         int offset = NO_VALUE;
         int number;
-        if (value.length() > 3) {
-            number = Integer.valueOf(value.substring(value.length() - 3), 10);
+        if (value.length() > 2) {
+            number = Integer.valueOf(value.substring(value.length() - 2), 10);
         } else {
             number = Integer.valueOf(value, 10);
         }
